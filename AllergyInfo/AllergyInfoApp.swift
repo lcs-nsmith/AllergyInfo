@@ -11,7 +11,18 @@ import SwiftUI
 struct AllergyInfoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                SearchView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass.circle")
+                        Text("Search")
+                    }
+                FavouritesListView()
+                    .tabItem {
+                        Image(systemName: "heart.text.square")
+                        Text("Favourites List")
+                    }
+            }
         }
     }
 }
