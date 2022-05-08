@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct AllergyInfoApp: App {
+    
+    @State var favourites: [Food] = []
+    
     var body: some Scene {
         WindowGroup {
             TabView {
-                SearchView()
+                SearchView(favourites: $favourites)
                     .tabItem {
                         Image(systemName: "magnifyingglass.circle")
                         Text("Search")
