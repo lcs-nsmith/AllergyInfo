@@ -13,8 +13,118 @@ struct ParameterSelectionMenuView: View {
     
     var body: some View {
         NavigationView {
-        Text("nil")
+            VStack {
+                Divider()
+                    .padding(.top)
+                
+                Text("Alert for which allergies?")
+                    .padding(.top)
+                    .font(Font.custom("AmericanTypewriter", size: 24))
+                
+                Spacer()
+                // list of allergens
+                VStack (spacing: 18){
+                    
+                    // Diary
+                    HStack {
+                    ZStack {
+                        Image(systemName: "square")
+                        Image(systemName: "checkmark.square")
+                            .opacity(0)
+                    }
+                    Text("Dairy")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Eggs
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Eggs")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Peanuts
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Peanuts")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Seafood
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Seafood")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Sesame
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Sesame")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    
+                    // Shellfish
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Shellfish")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Soy
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Soy")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                    
+                    // Tree nuts
+                    HStack {
+                        ZStack {
+                            Image(systemName: "square")
+                            Image(systemName: "checkmark.square")
+                                .opacity(0)
+                        }
+
+                    Text("Tree Nuts")
+                            .font(Font.custom("AmericanTypewriter", size: 18))
+                    }
+                }
+                Spacer(minLength: 360)
+            }
         }
+        .navigationBarTitle("Parameters")
         .toolbar {
                         ToolbarItem(placement: .confirmationAction) {
 
