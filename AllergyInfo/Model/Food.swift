@@ -8,6 +8,10 @@
 import Foundation
 
 struct Food: Decodable, Hashable {
+    let query: String
+    let intolerances: String
 }
 
-let testFood = Food()
+let testFood = Food(query: "pasta", intolerances: "Sesame")
+
+/// https://api.spoonacular.com/recipes/complexSearch

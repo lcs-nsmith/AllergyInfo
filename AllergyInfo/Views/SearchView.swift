@@ -19,6 +19,7 @@ struct SearchView: View {
     // favourites list
     @Binding var favourites: [Food]
     
+    @State var isParameterMenuShowing: Bool = false
     
     // MARK: Computed Properties
     
@@ -47,7 +48,10 @@ struct SearchView: View {
                         Image(systemName: "gearshape")
                             .resizable()
                             .frame(width: 30, height: 30, alignment: .center)
-                            
+                            .onTapGesture(perform: {
+                                isParameterMenuShowing = true
+                            })
+                        
                     }
                     
                     // search field
@@ -78,6 +82,12 @@ struct SearchView: View {
                 }
             }
             .navigationBarHidden(true)
+            .sheet(isPresented: $isParameterMenuShowing) {
+                NavigationView {
+                    ParameterSelectionMenuView(isParameterMenuShowing: $isParameterMenuShowing)
+                }
+            }
+            
         }
     }
 }
