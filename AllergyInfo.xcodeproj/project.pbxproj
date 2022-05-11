@@ -13,6 +13,7 @@
 		4AA260142824960E00A2A776 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA260132824960E00A2A776 /* SearchView.swift */; };
 		4AA26016282496E600A2A776 /* FavouritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA26015282496E600A2A776 /* FavouritesListView.swift */; };
 		4AD2A69428285A4700B100E2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2A69328285A4700B100E2 /* Food.swift */; };
+		4AD65807282C0E8B00B8361E /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD65806282C0E8B00B8361E /* FontsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4AA260132824960E00A2A776 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4AA26015282496E600A2A776 /* FavouritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListView.swift; sourceTree = "<group>"; };
 		4AD2A69328285A4700B100E2 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		4AD65806282C0E8B00B8361E /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA2600528247F0500A2A776 /* AllergyInfoApp.swift */,
+				4AD65805282C0E6D00B8361E /* Helpers */,
 				4AD2A69228285A2800B100E2 /* Model */,
 				4AA26017282496EC00A2A776 /* Views */,
 				4AA2600928247F0900A2A776 /* Assets.xcassets */,
@@ -95,6 +98,14 @@
 				4AD2A69328285A4700B100E2 /* Food.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4AD65805282C0E6D00B8361E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4AD65806282C0E8B00B8361E /* FontsView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			files = (
 				4AA260142824960E00A2A776 /* SearchView.swift in Sources */,
 				4AD2A69428285A4700B100E2 /* Food.swift in Sources */,
+				4AD65807282C0E8B00B8361E /* FontsView.swift in Sources */,
 				4AA26016282496E600A2A776 /* FavouritesListView.swift in Sources */,
 				4AA2600628247F0500A2A776 /* AllergyInfoApp.swift in Sources */,
 			);
