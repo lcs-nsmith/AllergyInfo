@@ -83,11 +83,8 @@ struct SearchView: View {
                         HStack {
                             NavigationLink(destination: DetailView(food: currentFood, favourites: $favourites)) {
                                 
-//                                Text(currentFood.title)
-//
-//                                RemoteImageView(fromURL: URL(string: currentFood.image)!)
-//
                                 ListItemView(food: currentFood)
+                                
                             }
                         }
                     }

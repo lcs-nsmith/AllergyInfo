@@ -20,11 +20,13 @@ struct RemoteImageView: View {
                    content: { downloadedImage in
             downloadedImage
                 .resizable()
-                .scaledToFit()
-                .frame(width: 45, height: 35, alignment: .center)
+                .scaledToFill()
+                .frame(width: 55, height: 45, alignment: .center)
         },
                    placeholder: {
-            ProgressView()
+            Image(systemName: "square.fill")
+                .resizable()
+                .frame(width: 50, height: 45, alignment: .center)
         })
         .padding(.vertical)
         

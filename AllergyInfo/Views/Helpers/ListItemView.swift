@@ -11,10 +11,21 @@ struct ListItemView: View {
     
     var food: Food
     
+    // custom fonts
+    private static let fontNames: [String] = {
+        var names = [String]()
+        for familyName in UIFont.familyNames {
+            names.append(contentsOf: UIFont.fontNames(forFamilyName: familyName))
+        }
+        return names.sorted()
+    }()
+    
     var body: some View {
-        VStack(alignment: .leading) {
+        HStack() {
             
             Text(food.title)
+                .font(Font.custom("Didot-Bold", size: 18))
+                
             
             RemoteImageView(fromURL: URL(string: food.image)!)
             
