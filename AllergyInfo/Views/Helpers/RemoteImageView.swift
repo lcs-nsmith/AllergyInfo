@@ -1,8 +1,8 @@
 //
 //  RemoteImageView.swift
-//  FurryFriends
+//  AllergyInfo
 //
-//  Created by Russell Gordon on 2022-02-26.
+//  Created by Nathan Smith on 2022-05-12.
 //
 
 import SwiftUI

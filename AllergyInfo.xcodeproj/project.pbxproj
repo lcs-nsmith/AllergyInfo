@@ -16,8 +16,8 @@
 		4AD65807282C0E8B00B8361E /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD65806282C0E8B00B8361E /* FontsView.swift */; };
 		4AD65809282C171700B8361E /* ParameterSelectionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD65808282C171700B8361E /* ParameterSelectionMenuView.swift */; };
 		4AD6580B282C891B00B8361E /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6580A282C891B00B8361E /* SearchResult.swift */; };
-		4AD6580F282D5F6300B8361E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6580E282D5F6200B8361E /* RemoteImageView.swift */; };
 		4AD65811282D606600B8361E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD65810282D606600B8361E /* ListItemView.swift */; };
+		4AD65815282D636800B8361E /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD65814282D636800B8361E /* RemoteImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		4AD65806282C0E8B00B8361E /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		4AD65808282C171700B8361E /* ParameterSelectionMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSelectionMenuView.swift; sourceTree = "<group>"; };
 		4AD6580A282C891B00B8361E /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		4AD6580E282D5F6200B8361E /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		4AD65810282D606600B8361E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		4AD65814282D636800B8361E /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 		4AD2A69128285A2100B100E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4AD6580E282D5F6200B8361E /* RemoteImageView.swift */,
 				4AD65806282C0E8B00B8361E /* FontsView.swift */,
 				4AD65810282D606600B8361E /* ListItemView.swift */,
+				4AD65814282D636800B8361E /* RemoteImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -183,9 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD65811282D606600B8361E /* ListItemView.swift in Sources */,
+				4AD65815282D636800B8361E /* RemoteImageView.swift in Sources */,
 				4AA260142824960E00A2A776 /* SearchView.swift in Sources */,
 				4AD6580B282C891B00B8361E /* SearchResult.swift in Sources */,
-				4AD6580F282D5F6300B8361E /* RemoteImageView.swift in Sources */,
 				4AD2A69428285A4700B100E2 /* Food.swift in Sources */,
 				4AD65807282C0E8B00B8361E /* FontsView.swift in Sources */,
 				4AA26016282496E600A2A776 /* FavouritesListView.swift in Sources */,
