@@ -37,16 +37,19 @@ struct DetailView: View {
                 VStack {
                         Text(food.title)
                             .font(Font.custom("Didot", size: 34))
+                            .padding(.bottom, 120)
                     
                     RemoteImageView(fromURL: URL(string: food.image)!)
+                        .scaleEffect(8)
+                    Spacer()
                 }
             }
         }
     }
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(food: testFood, favourites: )
-//    }
-//}
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(food: testFood, favourites: .constant(testList))
+    }
+}
