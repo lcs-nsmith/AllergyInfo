@@ -19,6 +19,7 @@ struct SearchView: View {
     // favourites list
     @Binding var favourites: [Food]
     
+    // sheet for parameters
     @State var isParameterMenuShowing: Bool = false
     
     // MARK: Computed Properties
@@ -58,7 +59,7 @@ struct SearchView: View {
                     ZStack {
                         TextField("horse",
                                   text: $searchInput,
-                                  prompt: Text("Enter the name of a potential allergen"))
+                                  prompt: Text("Enter the name of a food"))
                         .cornerRadius(10)
                         .background(Color("ListColour"))
                         .padding(10)
@@ -77,11 +78,16 @@ struct SearchView: View {
                     
                     // iterates list of foods being retreived
                     List(foodsParsed, id: \.id) { currentFood in
-//                        ListItemView(food: foodsParsed)
+                        
                         HStack {
-                            Text(currentFood.title)
-                            
-                            RemoteImageView(fromURL: URL(string: currentFood.image)!)
+                            NavigationLink(destination: DetailView(food: currentFood, favourites: $favourites)) {
+                                
+//                                Text(currentFood.title)
+//
+//                                RemoteImageView(fromURL: URL(string: currentFood.image)!)
+//
+                                ListItemView(food: currentFood)
+                            }
                         }
                     }
                     .onChange(of: searchInput) { whatWasTyped in
@@ -115,9 +121,10 @@ struct SearchView: View {
 //        let parameterInput = .lowercased().replacingOccurrences(of: " ", with: "+")
         
         // sets address of the endpoint
-        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=b86f47806eed4ce48e7df6ab964280b1&query=\(searchInput)&intolerances=peanuts+soy&number=2")!
-        /// example url
-        ///apiKey=b86f47806eed4ce48e7df6ab964280b1&query=pasta&intolerances=peanuts+soy&number=1
+        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=b0c4e627bdd74845afffb403be93c040&query=\(searchInput)&intolerances=peanuts+soy&number=2")!
+        /// example url : b86f47806eed4ce48e7df6ab964280b1&query=pasta&intolerances=peanuts+soy&number=1
+        ///apiKey #1 = b86f47806eed4ce48e7df6ab964280b1
+        ///apiKey #2 = b0c4e627bdd74845afffb403be93c040
         
         // Configure a URLRequest instance
         // Defines what type of request will be sent to the address noted above
