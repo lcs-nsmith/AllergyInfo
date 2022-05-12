@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct Food: Decodable, Hashable {
-    let query: String
-    let intolerances: String
+struct Food: Decodable {
+    let id: Int
+    let title: String
+    let image: String
 }
 
-let testFood = Food(query: "pasta", intolerances: "Sesame")
+let testFood = Food(id: 656791, title: "Pork Menudo", image: "https://spoonacular.com/recipeImages/656791-312x231.jpg")
 
 /// https://api.spoonacular.com/recipes/complexSearch

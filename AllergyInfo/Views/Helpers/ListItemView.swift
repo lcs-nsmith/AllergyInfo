@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListItemView: View {
     
-    let food: Food
+    var food: Food
     
     var body: some View {
         VStack(alignment: .leading) {
