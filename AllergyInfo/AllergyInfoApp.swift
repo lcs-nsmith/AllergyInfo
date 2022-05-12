@@ -17,12 +17,12 @@ struct AllergyInfoApp: App {
             TabView {
                 SearchView(favourites: $favourites)
                     .tabItem {
-                        Image(systemName: "magnifyingglass.circle")
+                        Image(systemName: "doc.text.magnifyingglass")
                         Text("Search")
                     }
                 FavouritesListView()
                     .tabItem {
-                        Image(systemName: "heart.text.square")
+                        Image(systemName: "bookmark.square")
                         Text("Favourites List")
                     }
             }

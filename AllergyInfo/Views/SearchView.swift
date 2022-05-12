@@ -68,6 +68,7 @@ struct SearchView: View {
                         .accentColor(.secondary)
                         .padding(.horizontal)
                         
+
                         HStack {
                             Spacer(minLength: 340)
                             Image(systemName: "magnifyingglass.circle")
