@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A380D42282D6C8C002BF833 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A380D41282D6C8C002BF833 /* DetailView.swift */; };
 		4AA2600628247F0500A2A776 /* AllergyInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2600528247F0500A2A776 /* AllergyInfoApp.swift */; };
 		4AA2600A28247F0900A2A776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2600928247F0900A2A776 /* Assets.xcassets */; };
 		4AA2600D28247F0900A2A776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2600C28247F0900A2A776 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A380D41282D6C8C002BF833 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4AA2600228247F0500A2A776 /* AllergyInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllergyInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA2600528247F0500A2A776 /* AllergyInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyInfoApp.swift; sourceTree = "<group>"; };
 		4AA2600928247F0900A2A776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				4AA26015282496E600A2A776 /* FavouritesListView.swift */,
 				4AA260132824960E00A2A776 /* SearchView.swift */,
 				4AD65808282C171700B8361E /* ParameterSelectionMenuView.swift */,
+				4A380D41282D6C8C002BF833 /* DetailView.swift */,
 				4AD2A69128285A2100B100E2 /* Helpers */,
 			);
 			path = Views;
@@ -185,6 +188,7 @@
 				4AD65811282D606600B8361E /* ListItemView.swift in Sources */,
 				4AD65815282D636800B8361E /* RemoteImageView.swift in Sources */,
 				4AA260142824960E00A2A776 /* SearchView.swift in Sources */,
+				4A380D42282D6C8C002BF833 /* DetailView.swift in Sources */,
 				4AD6580B282C891B00B8361E /* SearchResult.swift in Sources */,
 				4AD2A69428285A4700B100E2 /* Food.swift in Sources */,
 				4AD65807282C0E8B00B8361E /* FontsView.swift in Sources */,
