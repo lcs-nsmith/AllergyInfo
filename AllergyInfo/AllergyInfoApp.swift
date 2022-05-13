@@ -20,7 +20,7 @@ struct AllergyInfoApp: App {
                         Image(systemName: "doc.text.magnifyingglass")
                         Text("Search")
                     }
-                FavouritesListView()
+                FavouritesListView(favourites: $favourites)
                     .tabItem {
                         Image(systemName: "bookmark.square")
                         Text("Favourites List")

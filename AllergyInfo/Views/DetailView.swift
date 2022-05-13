@@ -35,12 +35,40 @@ struct DetailView: View {
                 
                 // start of page
                 VStack {
+                    HStack (spacing: 36){
                         Text(food.title)
-                            .font(Font.custom("Didot", size: 34))
-                            .padding(.bottom, 120)
-                    
+                            .font(Font.custom("Didot", size: 18))
+                        ZStack {
+                            Image(systemName: "bookmark.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 35, alignment: .center)
+                                .opacity(favourites.contains(where: { currentItemInList in
+                                    return currentItemInList.id == food.id
+                                }) == true ? 1.0 : 0.0)
+                            Image(systemName: "bookmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 35, alignment: .center)
+                                .opacity(favourites.contains(where: { currentItemInList in
+                                    return currentItemInList.id == food.id
+                                }) == false ? 1.0 : 0.0)
+                                .onTapGesture {
+                                    if favourites.contains(where: { currentItemInList in
+                                        return currentItemInList.id == food.id
+                                    }) == false {
+                                        favourites.append(food)
+                                    }
+                                }
+                        }
+                        .animation(.linear)
+                    }
+                    .padding(46)
+                    .offset(x: 0, y: -20)
+                    Spacer()
                     RemoteImageView(fromURL: URL(string: food.image)!)
-                        .scaleEffect(8)
+                        .scaleEffect(6.5)
+                        .padding(.bottom, 200)
                     Spacer()
                 }
             }
