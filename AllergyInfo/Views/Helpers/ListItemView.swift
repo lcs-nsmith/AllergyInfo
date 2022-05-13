@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListItemView: View {
     // MARK: Stored Properties
+    
     var food: Food
     
     // custom fonts
