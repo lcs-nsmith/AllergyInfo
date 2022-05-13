@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListItemView: View {
-    
+    // MARK: Stored Properties
     var food: Food
     
     // custom fonts
@@ -20,6 +20,7 @@ struct ListItemView: View {
         return names.sorted()
     }()
     
+    // MARK: Computed Properties
     var body: some View {
         HStack() {
             

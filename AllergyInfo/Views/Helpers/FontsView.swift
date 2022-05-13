@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 /// Displays all available fonts in a vertically scrolling view.
+// Don't really need this whole view but it is useful as one can browse all the availible fonts
 struct FontsView: View {
     private static let fontNames: [String] = {
         var names = [String]()

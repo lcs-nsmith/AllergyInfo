@@ -22,8 +22,6 @@ struct SearchView: View {
     // sheet for parameters
     @State var isParameterMenuShowing: Bool = false
     
-    // MARK: Computed Properties
-    
     private static let fontNames: [String] = {
         var names = [String]()
         for familyName in UIFont.familyNames {
@@ -32,6 +30,7 @@ struct SearchView: View {
         return names.sorted()
     }()
     
+    // MARK: Computed Properties
     var body: some View {
         NavigationView {
             

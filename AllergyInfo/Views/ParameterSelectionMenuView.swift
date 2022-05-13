@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ParameterSelectionMenuView: View {
-    
+    // MARK: Stored Properties
     @Binding var isParameterMenuShowing: Bool
     
+    // MARK: Computed Properties
     var body: some View {
         NavigationView {
             VStack {
