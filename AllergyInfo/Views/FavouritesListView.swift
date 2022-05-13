@@ -24,43 +24,51 @@ struct FavouritesListView: View {
     
     // MARK: Computed Properties
     var body: some View {
-        NavigationView {
+                NavigationView {
+        
+        ZStack {
+            // background of page
+            Color("ListColour")
+                .ignoresSafeArea()
             
-            ZStack {
-                // background of page
-                Color("ListColour")
-                    .ignoresSafeArea()
-                
-                // start of page
-                VStack {
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Image(systemName: "bookmark.slash.fill")
-                                .resizable()
-                                .frame(width: 35, height: 35, alignment: .center)
-                                .onTapGesture {
-                                    favourites.removeAll()
-                                }
-                            Text("Clear Favourites")
-                                .font(.callout)
-                        }
-                        .padding(.trailing)
-                        .padding(.top, 40)
+            // start of page
+            VStack {
+                HStack {
+                    Spacer()
+                    VStack {
+                        Image(systemName: "bookmark.slash.fill")
+                            .resizable()
+                            .frame(width: 35, height: 35, alignment: .center)
+                            .onTapGesture {
+                                favourites.removeAll()
+                            }
+                        
+                        Text("Clear Favourites")
+                            .font(.callout)
                     }
-                    .ignoresSafeArea()
-                    
-                        List(favourites, id: \.id) { currentFavourite in
-                            ListItemView(food: currentFavourite)
+                    .padding(.trailing)
+                    .padding(.top, 40)
+                }
+                .ignoresSafeArea()
+                List(favourites, id: \.id) { currentFavourite in
+                    NavigationLink(destination: DetailView(food: currentFavourite, favourites: $favourites)) {
+                        
+                        ListItemView(food: currentFavourite)
+                        
                     }
                 }
             }
         }
+                    // allows the hotspot to work, otherwise the image is under the navigation bar and it is unusuable
+        .navigationBarHidden(true)
+    }
     }
 }
 
 struct FavouritesListView_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         FavouritesListView(favourites: .constant(testList))
+        }
     }
 }
