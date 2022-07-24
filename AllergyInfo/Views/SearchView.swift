@@ -118,8 +118,8 @@ struct SearchView: View {
 //        let parameterInput = .lowercased().replacingOccurrences(of: " ", with: "+")
         
         // sets address of the endpoint
-        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=b86f47806eed4ce48e7df6ab964280b1&query=\(searchInput)&number=2")!
-        /// example url : b86f47806eed4ce48e7df6ab964280b1&query=pasta&intolerances=peanuts+soy&number=2
+        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=b86f47806eed4ce48e7df6ab964280b1&query=\(searchInput)&number=6")!
+        /// example url: https://api.spoonacular.com/recipes/complexSearch?apiKey=b86f47806eed4ce48e7df6ab964280b1&query=pasta&intolerances=peanuts+soy&number=2
         ///apiKey #1 = b86f47806eed4ce48e7df6ab964280b1
         ///apiKey #2 = b0c4e627bdd74845afffb403be93c040
         
